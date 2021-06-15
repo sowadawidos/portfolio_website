@@ -1,0 +1,40 @@
+.threeColumns {
+  height: 384px;
+  background-image: url("../../assets/3_columns_background.png");
+  display: flex;
+  align-items: center;
+  .threeColumns__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin: auto;
+    .threeColumns__list-text {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 80px;
+        color: #5E5322;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #3C3C3C;
+      }
+      p {
+        color: #3C3C3C;
+        width: 400px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}

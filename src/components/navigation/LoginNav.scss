@@ -1,0 +1,15 @@
+.login__nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  button {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #737373;
+    &:hover {
+      border: 1px solid #FAD648;
+    }
+  }
+}

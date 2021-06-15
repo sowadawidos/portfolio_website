@@ -1,0 +1,41 @@
+.main {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3C3C3C;
+    font-weight: 500;
+  }
+  img {
+    margin: 30px 0;
+    height: 33px;
+    width: 253px;
+  }
+  .main__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    button {
+      background-color: transparent;
+      border: 0.75px solid #737373;
+      text-align: center;
+      font-size: 36px;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      width: 260px;
+      height: 120px;
+      color: #737373;
+      cursor: pointer;
+      font-weight: 300;
+      margin-right: 10px;
+    }
+  }
+
+}

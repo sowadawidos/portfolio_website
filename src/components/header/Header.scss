@@ -1,0 +1,21 @@
+.header {
+  .nav__bar {
+    .nav__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+      .nav__list-text {
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          color: #3C3C3C;
+          padding: 5px 15px;
+          cursor: pointer;
+          &:hover {
+            border: 0.75px solid #737373;
+          }
+        }
+      }
+    }
+  }
+}

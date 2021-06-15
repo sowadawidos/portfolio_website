@@ -1,0 +1,15 @@
+#root {
+  font-family: 'Open Sans', sans-serif;
+}
+.first__look {
+  height: 100vh;
+  display: flex;
+  .first__look-img {
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    width: 800px;
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
