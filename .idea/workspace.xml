@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/NavList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/NavList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/Hero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/settings/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623783194899</updated>
       <workItem from="1623783198102" duration="189000" />
-      <workItem from="1623783421342" duration="10232000" />
+      <workItem from="1623783421342" duration="23095000" />
     </task>
     <servers />
   </component>

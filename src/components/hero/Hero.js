@@ -7,7 +7,7 @@ import "./Hero.scss";
 export const Hero = () => {
     return (
         <>
-            <section className="first__look" id="main">
+            <section className="first__look" id="menu">
                 <div className="first__look-img"/>
                 <div className="first__look-main">
                     <LoginNav/>
