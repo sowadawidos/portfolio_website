@@ -1,12 +1,15 @@
 .header {
   display: flex;
   justify-content: flex-end;
+
   .nav__bar {
     width: 600px;
+
     .nav__list {
       display: flex;
       justify-content: space-between;
       margin-top: 35px;
+
       .nav__list-text {
         a {
           text-decoration: none;
@@ -14,8 +17,54 @@
           color: #3C3C3C;
           padding: 5px 15px;
           cursor: pointer;
+
           &:hover {
             border: 0.75px solid #737373;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    justify-content: center;
+    .nav__bar {
+      width: 500px;
+      .nav__list {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav__list-text {
+          a {
+            text-align: center;
+            padding: 5px 4px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    .nav__bar {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    .nav__bar {
+      width: 350px;
+      .nav__list {
+        .nav__list-text {
+          a {
+            font-size: 14px;
+            text-align: center;
+            padding: 5px 1px;
+            text-overflow: ellipsis;
           }
         }
       }

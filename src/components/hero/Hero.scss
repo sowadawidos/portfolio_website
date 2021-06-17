@@ -1,4 +1,16 @@
 .first__look-main {
   margin: 20px 20px;
-  width: 41%;
+  width: 600px;
+}
+
+@media (max-width: 640px) {
+  .first__look-main {
+    width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first__look-main {
+    width: 350px;
+  }
 }

@@ -13,3 +13,12 @@
     background-size: cover;
   }
 }
+
+@media (max-width: 640px) {
+  .first__look {
+    justify-content: center;
+  }
+  .first__look-img {
+    display: none;
+  }
+}

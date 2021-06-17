@@ -37,5 +37,29 @@
       margin-right: 10px;
     }
   }
+}
 
+@media (max-width: 640px) {
+  .main {
+    .main__buttons {
+      button {
+        width: 200px;
+        font-size: 25px;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin-top: 160px;
+    .main__buttons {
+      button {
+        width: 150px;
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+    }
+  }
 }

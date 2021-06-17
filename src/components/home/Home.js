@@ -9,9 +9,10 @@ import {Contact} from "../contact/Contact";
 import {Footer} from "../footer/Footer";
 
 export const Home = () => {
+    const active = false;
     return (
         <>
-            <Hero/>
+            <Hero active={active}/>
             <ThreeColumns/>
             <SimpleSteps/>
             <AboutUs/>

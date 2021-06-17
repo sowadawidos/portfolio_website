@@ -4,10 +4,10 @@
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  width: 1440px;
+  width: 100%;
   .container {
-    margin-right: 80px;
-    width: 48%;
+    //margin-right: 80px;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,9 +17,21 @@
       color: #3C3C3C;
     }
     .social {
+      display: flex;
       a {
         margin-right: 20px;
       }
     }
   }
+}
+@media (max-width: 700px) {
+  .footer {
+    .container {
+      width: 100%;
+      .copyright {
+        margin-left: 10px;
+      }
+    }
+  }
+
 }

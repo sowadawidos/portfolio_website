@@ -90,3 +90,61 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .helps {
+    height: 950px;
+    .container {
+      .helps__buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        button {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .helps {
+    height: 1050px;
+    .container {
+      .helps__list {
+        .helps__list-text {
+          .helps__list-text-main {
+            margin-right: 10px;
+            width: 250px;
+            h1 {
+              font-size: 20px;
+            }
+            h2 {
+              font-size: 14px;
+            }
+          }
+          .helps_list-text-second {
+            width: 100px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .helps {
+    height: 1100px;
+    .container {
+      .helps__pages {
+        a {
+          margin-right: 20px;
+        }
+      }
+      .helps__text {
+        width: 350px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -4,14 +4,14 @@ import {Header} from "../header/Header";
 import {Main} from "./Main";
 import "./Hero.scss";
 
-export const Hero = () => {
+export const Hero = ({active}) => {
     return (
         <>
             <section className="first__look" id="menu">
                 <div className="first__look-img"/>
                 <div className="first__look-main">
                     <LoginNav/>
-                    <Header/>
+                    <Header active={active}/>
                     <Main/>
                 </div>
             </section>

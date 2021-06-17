@@ -73,3 +73,31 @@
 
   }
 }
+
+@media (max-width: 1100px) {
+  .simple__steps {
+    text-align: center;
+    height: 700px;
+    .simple__steps-title {
+      margin-top: 40px;
+    }
+    .simple__steps-box {
+      height: 400px;
+      .simple__steps-list {
+        flex-wrap: wrap;
+        margin: 0 20px;
+        .simple__steps-list-text {
+          width: 150px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 435px){
+  .simple__steps {
+    margin-bottom: 40px;
+    height: 750px;
+  }
+}

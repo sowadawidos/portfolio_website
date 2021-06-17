@@ -5,12 +5,13 @@ import "./Login.scss";
 import {LoginMain} from "./LoginMain";
 
 export const Login = () => {
+    const active = true;
     return (
         <>
             <section className="login">
                 <div className="container">
                     <LoginNav/>
-                    <Header/>
+                    <Header active={active}/>
                     <LoginMain/>
                 </div>
             </section>

@@ -38,3 +38,35 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .threeColumns {
+    height: 600px;
+    .threeColumns__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      .threeColumns__list-text {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .threeColumns {
+    height: 800px;
+  }
+}
+
+@media (max-width: 450px) {
+  .threeColumns {
+    height: 850px;
+    .threeColumns__list {
+      .threeColumns__list-text {
+        p {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
