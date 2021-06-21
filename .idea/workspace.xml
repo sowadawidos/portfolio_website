@@ -3,25 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about_us/AboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about_us/AboutUs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/NavList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/NavList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/helps/Helps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/helps/Helps.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/Hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/Main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/LoginMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/LoginNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/LoginNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/LoginNav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/LoginNav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/simple_steps/SimpleSteps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/simple_steps/SimpleSteps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/three_columns/ThreeColumns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/three_columns/ThreeColumns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/RegisterMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +65,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,7 +79,10 @@
       <option name="presentableId" value="Default" />
       <updated>1623783194899</updated>
       <workItem from="1623783198102" duration="189000" />
-      <workItem from="1623783421342" duration="38015000" />
+      <workItem from="1623783421342" duration="38316000" />
+      <workItem from="1623947765662" duration="1564000" />
+      <workItem from="1624215891506" duration="162000" />
+      <workItem from="1624217252474" duration="12784000" />
     </task>
     <servers />
   </component>
@@ -94,5 +99,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

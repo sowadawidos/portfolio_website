@@ -1,18 +1,16 @@
 import React, {useState, useEffect} from "react";
-import {Header} from "../header/Header";
 import {LoginNav} from "../navigation/LoginNav";
-import "./Login.scss";
-import {LoginMain} from "./LoginMain";
+import {Header} from "../header/Header";
+import {LoggedOutMain} from "./LoggedOutMain";
 
-export const Login = ({signIn, user, logOut}) => {
-    const active = true;
+export const LoggedOut = ({user, logOut}) => {
     return (
         <>
             <section className="login">
                 <div className="container">
                     <LoginNav user={user} logOut={logOut}/>
-                    <Header active={active}/>
-                    <LoginMain signIn={signIn} user={user}/>
+                    <Header/>
+                    <LoggedOutMain/>
                 </div>
             </section>
         </>

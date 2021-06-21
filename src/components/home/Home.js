@@ -8,16 +8,16 @@ import {Helps} from "../helps/Helps";
 import {Contact} from "../contact/Contact";
 import {Footer} from "../footer/Footer";
 
-export const Home = () => {
+export const Home = ({user, logOut, sendMessage}) => {
     const active = false;
     return (
         <>
-            <Hero active={active}/>
+            <Hero active={active} user={user} logOut={logOut}/>
             <ThreeColumns/>
             <SimpleSteps/>
             <AboutUs/>
             <Helps/>
-            <Contact/>
+            <Contact sendMessage={sendMessage}/>
             <Footer/>
         </>
     )

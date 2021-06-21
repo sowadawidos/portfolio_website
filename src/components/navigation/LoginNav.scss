@@ -1,7 +1,12 @@
 .login__nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-right: 10px;
+  .user {
+    font-size: 14px;
+    margin-right: 10px;
+  }
   button {
     padding: 5px 15px;
     background-color: transparent;
@@ -10,6 +15,7 @@
     color: #737373;
     &:hover {
       border: 1px solid #FAD648;
+      margin: -1px;
     }
   }
 }

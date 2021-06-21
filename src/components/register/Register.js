@@ -3,14 +3,14 @@ import {LoginNav} from "../navigation/LoginNav";
 import {Header} from "../header/Header";
 import {RegisterMain} from "./RegisterMain";
 
-export const Register = () => {
+export const Register = ({signUp, user, logOut}) => {
     return (
         <>
             <section className="login">
                 <div className="container">
-                    <LoginNav/>
+                    <LoginNav user={user} logOut={logOut}/>
                     <Header/>
-                    <RegisterMain/>
+                    <RegisterMain signUp={signUp} user={user}/>
                 </div>
             </section>
         </>

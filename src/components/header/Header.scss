@@ -17,9 +17,11 @@
           color: #3C3C3C;
           padding: 5px 15px;
           cursor: pointer;
+          display: block;
 
           &:hover {
             border: 0.75px solid #737373;
+            margin: -1px;
           }
         }
       }
@@ -51,6 +53,18 @@
   .header {
     .nav__bar {
       width: 400px;
+      .nav__list {
+        .nav__list-text:nth-child(1) {
+          a {
+            padding: 13px 4px;
+          }
+        }
+        .nav__list-text:nth-child(5) {
+          a {
+            padding: 13px 4px;
+          }
+        }
+      }
     }
   }
 }
