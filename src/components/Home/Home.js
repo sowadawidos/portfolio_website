@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react";
 import "./Home.scss";
-import {Hero} from "../hero/Hero";
-import {ThreeColumns} from "../three_columns/ThreeColumns";
-import {SimpleSteps} from "../simple_steps/SimpleSteps";
-import {AboutUs} from "../about_us/AbousUs";
-import {Helps} from "../helps/Helps";
-import {Contact} from "../contact/Contact";
-import {Footer} from "../footer/Footer";
+import {Hero} from "../Hero/Hero";
+import {ThreeColumns} from "../Three_columns/ThreeColumns";
+import {SimpleSteps} from "../Simple_steps/SimpleSteps";
+import {AboutUs} from "../About_us/AbousUs";
+import {Helps} from "../Helps/Helps";
+import {Contact} from "../Contact/Contact";
+import {Footer} from "../Footer/Footer";
 
 export const Home = ({user, logOut, sendMessage}) => {
     const active = false;

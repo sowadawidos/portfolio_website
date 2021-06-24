@@ -5,12 +5,13 @@ import {
   Link
 } from "react-router-dom";
 import React, {useState, useEffect} from "react"
-import {Login} from "./components/login/Login";
-import {Register} from "./components/register/Register";
-import {Home} from "./components/home/Home";
+import {Login} from "./components/Login/Login";
+import {Register} from "./components/Register/Register";
+import {Home} from "./components/Home/Home";
 import "./scss/main.scss";
 import {auth, db} from "./API/API"
 import {LoggedOut} from "./components/LoggedOut/LoggedOut";
+import {ReturnItems} from "./components/Return_items/ReturnItems";
 
 function App() {
   const [user, setUser] = useState();
@@ -58,6 +59,9 @@ function App() {
           </Route>
           <Route path="/wyloguj">
             <LoggedOut user={user} logOut={logOut}/>
+          </Route>
+          <Route path="/oddaj-rzeczy">
+            <ReturnItems user={user} logOut={logOut} sendMessage={sendMessage}/>
           </Route>
         </Switch>
       </Router>

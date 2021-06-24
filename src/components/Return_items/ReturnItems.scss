@@ -1,0 +1,68 @@
+.simple__steps-return {
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    .form_hero {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: calc(100vh + 86px);
+    }
+    .simple__steps-hero {
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .simple__steps-hero-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .simple__steps-title {
+          font-size: 38px;
+          font-weight: 500;
+          text-align: center;
+        }
+        .simple__steps-title2 {
+          margin: 20px 0;
+          text-transform: uppercase;
+        }
+        .simple__steps-text {
+          font-size: 40px;
+          font-weight: 300;
+          margin-bottom: 50px;
+        }
+        .simple__steps-list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .simple__steps-list-text {
+            border: 1px solid #3C3C3C;
+            width: 115px;
+            height: 115px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            margin-right: 15px;
+            h1 {
+              font-size: 32px;
+              font-weight: 300;
+              transform: rotate(-45deg);
+              padding-right: 30px;
+            }
+            h2 {
+              text-align: center;
+              font-size: 22px;
+              font-weight: 300;
+              transform: rotate(-45deg);
+              padding-top: 8px;
+              padding-left: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

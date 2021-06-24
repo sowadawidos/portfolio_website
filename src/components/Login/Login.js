@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {Header} from "../header/Header";
-import {LoginNav} from "../navigation/LoginNav";
+import {Header} from "../Header/Header";
+import {LoginNav} from "../Navigation/LoginNav";
 import "./Login.scss";
 import {LoginMain} from "./LoginMain";
 

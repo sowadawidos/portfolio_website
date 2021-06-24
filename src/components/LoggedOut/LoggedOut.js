@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {LoginNav} from "../navigation/LoginNav";
-import {Header} from "../header/Header";
+import {LoginNav} from "../Navigation/LoginNav";
+import {Header} from "../Header/Header";
 import {LoggedOutMain} from "./LoggedOutMain";
 
 export const LoggedOut = ({user, logOut}) => {

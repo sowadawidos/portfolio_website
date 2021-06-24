@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import facebook from "../../assets/Facebook.svg";
-import instagram from "../../assets/Instagram.svg";
+import facebook from "./Facebook.svg";
+import instagram from "./Instagram.svg";
 import "./Footer.scss";
 
 export const Footer = () => {

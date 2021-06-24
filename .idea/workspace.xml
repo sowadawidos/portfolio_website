@@ -3,6 +3,54 @@
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/3_columns_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/3_columns_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Background-Contact-Form.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Background-Contact-Form.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Form-Hero-Image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/Form-Hero-Image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home-Hero-Image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Home-Hero-Image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Icon-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/Icon-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Icon-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/Icon-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Icon-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/Icon-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Icon-4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/Icon-4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/People.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/People.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Signature.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/Signature.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOut.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about_us/AbousUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/AbousUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about_us/AboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/AboutUs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about_us/AboutUsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/AboutUsMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/NavList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helps/Helps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helps/Helps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helps/HelpsButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/HelpsButtons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helps/HelpsPages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/HelpsPages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/LoginMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/LoggedNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoggedNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/LoginNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoginNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/LoginNav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoginNav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/simple_steps/SimpleSteps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/simple_steps/SimpleSteps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/simple_steps/SimpleStepsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleStepsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/three_columns/ThreeColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/three_columns/ThreeColumns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/three_columns/ThreeColumnsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumnsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +60,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -51,7 +99,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/Return_items" />
+      <recent name="$PROJECT_DIR$/src/components/About_us" />
+      <recent name="$PROJECT_DIR$/src/components/Simple_steps" />
+      <recent name="$PROJECT_DIR$/src/components/Hero" />
+      <recent name="$PROJECT_DIR$/src/components/footer" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,7 +118,8 @@
       <workItem from="1623783421342" duration="38316000" />
       <workItem from="1623947765662" duration="1564000" />
       <workItem from="1624215891506" duration="162000" />
-      <workItem from="1624217252474" duration="15287000" />
+      <workItem from="1624217252474" duration="15306000" />
+      <workItem from="1624549043848" duration="4594000" />
     </task>
     <servers />
   </component>

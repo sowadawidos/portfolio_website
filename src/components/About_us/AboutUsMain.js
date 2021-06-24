@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import decoration from "../../assets/Decoration.svg"
-import signature from "../../assets/Signature.svg"
+import signature from "./Signature.svg"
 export const AboutUsMain = () => {
     return (
         <>

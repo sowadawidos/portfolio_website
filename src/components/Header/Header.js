@@ -4,7 +4,7 @@ import {NavList} from "./NavList";
 
 export const Header = ({active}) => {
     const nav = ["Start", "O co chodzi?", "O nas", "Fundacja i organizacje", "Kontakt"];
-    const navLinks = ["menu", "simple_steps", "about_us", "helps", "contact"];
+    const navLinks = ["menu", "Simple_steps", "About_us", "Helps", "Contact"];
 
     return (
         <>
