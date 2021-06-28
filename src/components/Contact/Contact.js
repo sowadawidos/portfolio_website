@@ -5,7 +5,6 @@ import {Form, Field} from 'react-final-form'
 
 export const Contact = ({sendMessage}) => {
     const [active, setActive] = useState(false);
-    console.log(active)
     return (
         <>
             <section className="contact" id="contact">

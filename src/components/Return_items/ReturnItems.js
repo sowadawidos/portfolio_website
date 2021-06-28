@@ -13,15 +13,15 @@ export const ReturnItems = ({logOut, user, sendMessage}) => {
     return (
         <>
             <section className="return__items">
-                <div className="container">
+                <div className="hero__box">
                     <LoginNav user={user} logOut={logOut}/>
                     <Header active={active}/>
-                    <SimpleSteps/>
-                    <Important/>
-                    <ReturnItemForm/>
-                    <Contact sendMessage={sendMessage}/>
-                    <Footer/>
                 </div>
+                <SimpleSteps/>
+                <Important/>
+                <ReturnItemForm/>
+                <Contact sendMessage={sendMessage}/>
+                <Footer/>
             </section>
         </>
     )

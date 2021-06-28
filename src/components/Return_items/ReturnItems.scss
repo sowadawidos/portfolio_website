@@ -1,13 +1,25 @@
+.return__items {
+  .hero__box {
+    margin: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 .simple__steps-return {
+  background: rgb(255,255,255);
+  background: linear-gradient(183deg, rgba(255,255,255,1) 0%, rgba(248,247,245,1) 100%);
   .container {
     max-width: 1440px;
-    margin: auto;
-    .form_hero {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      height: calc(100vh + 86px);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    .form__hero {
+      background-image: url("Form-Hero-Image.jpg") ;
+      background-position: center;
+      background-size: cover;
+      width: 900px;
+      height: 100vh;
     }
     .simple__steps-hero {
       height: 100vh;

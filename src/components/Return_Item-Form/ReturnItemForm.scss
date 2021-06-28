@@ -1,6 +1,28 @@
+@import "src/scss/settings/colors";
+
 .return__form-main {
   height: 100vh;
   background-image: url("Background-Form.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: inherit;
+    .return__form-main-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 70%;
+      h1 {
+        font-size: 24px;
+        font-weight: 300;
+        color: $color-grey;
+      }
+    }
+  }
 }

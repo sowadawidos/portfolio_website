@@ -1,0 +1,142 @@
+@import "src/scss/settings/colors";
+@import "src/scss/settings/fonts";
+
+.return__form-main {
+  .form {
+    margin: 50px 50px;
+
+    .form__main {
+      height: 500px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 575px;
+
+
+
+      select {
+        margin-top: 10px;
+        border: 1px solid $color-lightgrey;
+        color: $color-lightgrey;
+        width: 300px;
+        height: 40px;
+        background-color: transparent;
+        padding-left: 10px;
+      }
+      .inputs {
+        width: inherit;
+        display: flex;
+        .address {
+          width: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          margin-right: 20px;
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            input[type="text"] {
+              width: 250px;
+            }
+          }
+        }
+        .collection-date {
+          width: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 20px;
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            input[type="text"] {
+              width: 250px;
+            }
+            textarea {
+              width: 250px;
+              height: 120px;
+              background-color: transparent;
+              resize: none;
+            }
+          }
+        }
+
+        select {
+          border: 1px solid $color-lightgrey;
+          color: $color-lightgrey;
+          margin-left: 10px;
+          width: 300px;
+          height: 40px;
+          background-color: transparent;
+        }
+      }
+
+      .form__main-title {
+        font-size: 36px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 20px;
+      }
+      .form__main-title.smaller {
+          font-size: 24px;
+        margin: 20px 0;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 22px;
+        color: $color-lightgrey;
+        font-weight: 300;
+
+        input[type="checkbox"] {
+          margin-right: 30px;
+          width: 40px;
+          height: 40px;
+          background-color: transparent;
+          &:checked {
+            background-color: $color-gold;
+          }
+        }
+        input[type="text"] {
+          width: inherit;
+          height: 40px;
+          background-color: transparent;
+          border: 1px solid $color-lightgrey;
+          font-size: 24px;
+          padding-left: 10px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .buttons {
+        width: inherit;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .btn {
+          width: 170px;
+          height: 80px;
+          border: none;
+          padding: 5px 25px;
+          background-color: transparent;
+          font-size: 24px;
+          cursor: pointer;
+          text-align: center;
+          font-family: $font-base;
+          color: $color-lightgrey;
+          font-weight: 300;
+          border: 1px solid $color-lightgrey;
+        }
+      }
+    }
+  }
+}
