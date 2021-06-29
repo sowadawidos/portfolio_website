@@ -32,6 +32,7 @@
         text-align: center;
         &:hover {
           border: 1px solid #3C3C3C;
+          padding: -1px;
         }
       }
     }
@@ -84,7 +85,8 @@
         margin-right: 30px;
         padding: 15px 15px;
         &:hover {
-          border: .75px solid #3C3C3C;
+          border: 1px solid #3C3C3C;
+          padding: -1px;
         }
       }
     }

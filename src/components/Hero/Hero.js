@@ -12,7 +12,7 @@ export const Hero = ({active, user, logOut}) => {
                 <div className="first__look-main">
                     <LoginNav user={user} logOut={logOut}/>
                     <Header active={active} />
-                    <Main/>
+                    <Main user={user}/>
                 </div>
             </section>
         </>

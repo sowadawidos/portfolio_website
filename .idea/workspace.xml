@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/Helps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/Helps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/HelpsButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/HelpsButtons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,7 +75,7 @@
       <workItem from="1624215891506" duration="162000" />
       <workItem from="1624217252474" duration="15306000" />
       <workItem from="1624549043848" duration="21508000" />
-      <workItem from="1624910028314" duration="22741000" />
+      <workItem from="1624910028314" duration="24855000" />
     </task>
     <servers />
   </component>

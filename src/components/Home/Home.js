@@ -14,7 +14,7 @@ export const Home = ({user, logOut, sendMessage}) => {
         <>
             <Hero active={active} user={user} logOut={logOut}/>
             <ThreeColumns/>
-            <SimpleSteps/>
+            <SimpleSteps user={user}/>
             <AboutUs/>
             <Helps/>
             <Contact sendMessage={sendMessage}/>
