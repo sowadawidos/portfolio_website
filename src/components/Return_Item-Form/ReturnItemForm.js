@@ -8,12 +8,12 @@ import {Summary} from "../ReturnForms/Summary";
 import {ThankYou} from "../ReturnForms/ThankYou";
 
 const STEP_NAMES = {
-    first: '1',
-    second: '2',
-    third: "3",
-    fourth: '4',
-    fifth: '5',
-    sixth: '6'
+    first: "FIRST_FORM",
+    second: "SECOND_FORM",
+    third: "THIRD_FORM",
+    fourth: "FOURTH_FORM",
+    fifth: "FIFTH_FORM",
+    sixth: "SIXTH_FORM"
 }
 const STEP_ORDER = [STEP_NAMES.first, STEP_NAMES.second, STEP_NAMES.third, STEP_NAMES.fourth, STEP_NAMES.fifth, STEP_NAMES.sixth]
 
@@ -22,7 +22,6 @@ export const ReturnItemForm = ({getOrder}) => {
     const [stepsData, setStepsData] = useState({
 
     });
-    console.log(stepsData);
     const currentStepName = STEP_ORDER[currentStep];
 
     const setData = useCallback((stepName, stepData) => {
@@ -38,10 +37,10 @@ export const ReturnItemForm = ({getOrder}) => {
             currentStepComponent = <ReturnForm1 data={stepsData[STEP_NAMES.first]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.first, data)}/>
             break;
         case STEP_NAMES.second:
-            currentStepComponent = <ReturnForm2 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
+            currentStepComponent = <ReturnForm2 data={stepsData[STEP_NAMES.second]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.second, data)}/>
             break;
         case STEP_NAMES.third:
-            currentStepComponent = <ReturnForm3 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
+            currentStepComponent = <ReturnForm3 data={stepsData[STEP_NAMES.third]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.third, data)}/>
             break;
         case STEP_NAMES.fourth:
             currentStepComponent = <ReturnForm4 data={stepsData[STEP_NAMES.fourth]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.fourth, data)}/>
@@ -53,8 +52,6 @@ export const ReturnItemForm = ({getOrder}) => {
             currentStepComponent = <ThankYou/>
             break;
     }
-
-    console.log(currentStep)
     return (
         <>
             <section className="return__form-main">

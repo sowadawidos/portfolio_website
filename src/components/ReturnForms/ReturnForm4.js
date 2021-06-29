@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
+export const ReturnForm4 = ({setCurrentStep, setStepsData, setData}) => {
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
@@ -10,11 +10,8 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
             <div className="form">
                 <Form
                     onSubmit={(form) => {
-                        setStepsData(prev => ({
-                            ...prev,
-                            FOURTH_FORM: form
-                        }))
-                        setCurrentStep(prev => prev + 1)
+                        setData(form);
+                        setCurrentStep(prev => prev + 1);
                     }}
                     validate={values => {
                         const errors = {}
@@ -52,7 +49,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Ulica
-                                                <input type="text" name="street" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input type="text" name="street" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -60,7 +57,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Miasto
-                                                <input type="text" name="city" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input type="text" name="city" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -68,7 +65,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Kod pocztowy
-                                                <input type="number" name="post-code" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input type="number" name="post-code" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -76,7 +73,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Numer telefonu
-                                                <input name="telephone-number" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input name="telephone-number" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -89,7 +86,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Data
-                                                <input type="text" name="date" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input type="text" name="date" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -97,7 +94,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Godzina
-                                                <input type="text" name="hour" {...input} style={meta.error && {border: "1px solid red"}}/>
+                                                <input type="text" name="hour" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>

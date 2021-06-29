@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Field, Form} from "react-final-form";
 import "./ReturnForm.scss";
 
-export const ReturnForm2 = ({setCurrentStep, setStepsData}) => {
+export const ReturnForm2 = ({setCurrentStep, setData}) => {
     const [error, setError] = useState(false);
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
@@ -14,11 +14,8 @@ export const ReturnForm2 = ({setCurrentStep, setStepsData}) => {
                     if (!form.select) {
                         setError(true);
                     } else {
-                        setStepsData(prev => ({
-                            ...prev,
-                            SECOND_FORM: form
-                        }))
-                        setCurrentStep(prev => prev + 1)
+                        setData(form);
+                        setCurrentStep(prev => prev + 1);
                     }
                 }}>
                     {({handleSubmit}) => (

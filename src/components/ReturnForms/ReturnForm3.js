@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
+export const ReturnForm3 = ({setCurrentStep, setStepsData, setData}) => {
     const [error, setError] = useState(false);
-    console.log(error)
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
@@ -14,11 +13,8 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                     if (!form.localization || !form.thirdCheckbox) {
                         setError(true);
                     } else {
-                        setStepsData(prev => ({
-                            ...prev,
-                            THIRD_FORM: form
-                        }))
-                        setCurrentStep(prev => prev + 1)
+                        setData(form);
+                        setCurrentStep(prev => prev + 1);
                     }
                 }}>
                     {({handleSubmit}) => (

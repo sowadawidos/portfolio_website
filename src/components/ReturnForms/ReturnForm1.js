@@ -2,9 +2,8 @@ import React, {useState, useEffect} from "react";
 import {Form, Field} from 'react-final-form';
 import "./ReturnForm.scss";
 
-export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
+export const ReturnForm1 = ({setCurrentStep, setData}) => {
     const [error, setError] = useState(false);
-    console.log(error)
     return (
         <>
             <div className="form">
@@ -13,11 +12,8 @@ export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
                         if (!form.firstCheckbox) {
                             setError(true);
                         } else {
-                            setStepsData(prev => ({
-                                ...prev,
-                                FIRST_FORM: form
-                            }))
-                            setCurrentStep(prev => prev + 1)
+                            setData(form);
+                            setCurrentStep(prev => prev + 1);
                         }
 
                     }}>

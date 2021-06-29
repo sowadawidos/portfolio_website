@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-export const HelpsButtons = ({setActive, active}) => {
+export const HelpsButtons = ({setActive}) => {
 
     const handleFirstButton = () => {
         setActive({
