@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import "./ReturnItemForm.scss";
 import {ReturnForm1} from "../ReturnForms/ReturnForm1";
 import {ReturnForm2} from "../ReturnForms/ReturnForm2";
@@ -25,10 +25,17 @@ export const ReturnItemForm = ({getOrder}) => {
     console.log(stepsData);
     const currentStepName = STEP_ORDER[currentStep];
 
+    const setData = useCallback((stepName, stepData) => {
+        setStepsData(prev => ({
+            ... prev,
+            [stepName]: stepData
+        }))
+    });
+
     let currentStepComponent;
     switch (currentStepName) {
         case STEP_NAMES.first:
-            currentStepComponent = <ReturnForm1 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
+            currentStepComponent = <ReturnForm1 data={stepsData[STEP_NAMES.first]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.first, data)}/>
             break;
         case STEP_NAMES.second:
             currentStepComponent = <ReturnForm2 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
@@ -37,7 +44,7 @@ export const ReturnItemForm = ({getOrder}) => {
             currentStepComponent = <ReturnForm3 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
             break;
         case STEP_NAMES.fourth:
-            currentStepComponent = <ReturnForm4 setCurrentStep={setCurrentStep} setStepsData={setStepsData}/>
+            currentStepComponent = <ReturnForm4 data={stepsData[STEP_NAMES.fourth]} setCurrentStep={setCurrentStep} setData={(data) => setData(STEP_NAMES.fourth, data)}/>
             break;
         case STEP_NAMES.fifth:
             currentStepComponent = <Summary setCurrentStep={setCurrentStep} stepsData={stepsData} getOrder={getOrder}/>
