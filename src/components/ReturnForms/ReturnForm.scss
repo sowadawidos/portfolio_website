@@ -9,11 +9,69 @@
       height: 500px;
       display: flex;
       align-items: flex-start;
-      justify-content: space-around;
       flex-direction: column;
       width: 575px;
 
+      .last_form {
+        display: flex;
+        margin-top: 50px;
 
+        .address {
+          margin-right: 15px;
+
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            overflow-wrap: break-word;
+            height: 50px;
+
+            input[type="text"] {
+              margin-left: 10px;
+              width: 250px;
+            }
+
+            input[type="number"] {
+              margin-left: 10px;
+              width: 250px;
+            }
+          }
+        }
+
+        .collection-date {
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            overflow-wrap: break-word;
+
+            input[type="text"] {
+              margin-left: 10px;
+              width: 250px;
+            }
+
+            input[type="date"] {
+              width: 250px;
+              margin-left: 10px;
+            }
+
+            input[type="time"] {
+              width: 250px;
+              margin-left: 10px;
+            }
+
+            textarea {
+              width: 250px;
+              height: 120px;
+              background-color: transparent;
+              resize: none;
+              margin-left: -60px;
+            }
+          }
+        }
+      }
 
       select {
         margin-top: 10px;
@@ -24,9 +82,12 @@
         background-color: transparent;
         padding-left: 10px;
       }
+
       .inputs {
         width: inherit;
         display: flex;
+        flex-direction: column;
+
         .address {
           width: 350px;
           display: flex;
@@ -34,30 +95,40 @@
           align-items: flex-start;
           justify-content: center;
           margin-right: 20px;
+
           label {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-right: 10px;
+
             input[type="text"] {
               width: 250px;
             }
           }
         }
+
         .collection-date {
           width: 350px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           margin-right: 20px;
+
           label {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-right: 10px;
+
             input[type="text"] {
               width: 250px;
             }
+
+            input[type="date"] {
+              width: 250px;
+            }
+
             textarea {
               width: 250px;
               height: 120px;
@@ -83,8 +154,9 @@
         color: black;
         margin-bottom: 20px;
       }
+
       .form__main-title.smaller {
-          font-size: 24px;
+        font-size: 24px;
         margin: 20px 0;
       }
 
@@ -92,7 +164,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        font-size: 22px;
+        font-size: 20px;
         color: $color-lightgrey;
         font-weight: 300;
 
@@ -101,19 +173,48 @@
           width: 40px;
           height: 40px;
           background-color: transparent;
+
           &:checked {
             background-color: $color-gold;
           }
         }
-        input[type="text"] {
+
+        input[type="radio"] {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+        }
+
+        input {
           width: inherit;
           height: 40px;
           background-color: transparent;
           border: 1px solid $color-lightgrey;
-          font-size: 24px;
+          font-size: 22px;
+          font-weight: 500;
+          color: $color-grey;
           padding-left: 10px;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
+          font-family: "Open Sans", sans-serif;
+
         }
+      }
+
+      .error {
+        margin-top: 40px;
+
+        h1 {
+          color: red;
+          font-weight: 500;
+        }
+      }
+
+      .errors {
+        position: absolute;
+        font-size: 16px;
+        color: red;
+        font-weight: 400;
+        align-self: flex-end;
       }
 
       .buttons {
@@ -121,12 +222,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 60px;
 
         .btn {
           width: 170px;
           height: 80px;
           border: none;
-          padding: 5px 25px;
+          padding: 5px 15px;
           background-color: transparent;
           font-size: 24px;
           cursor: pointer;
@@ -135,6 +237,77 @@
           color: $color-lightgrey;
           font-weight: 300;
           border: 1px solid $color-lightgrey;
+        }
+
+        .back {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  .return__form-main {
+    .form {
+      .form__main {
+        .form__main-title.smaller {
+            margin: 5px 0;
+          }
+        .label {
+          font-size: 20px;
+        }
+        .last_form {
+          margin-top: 10px;
+          flex-direction: column;
+          .address {
+            width: 450px;
+          }
+          .collection-date {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 675px) {
+  .return__form-main {
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .form__main {
+        width: 450px;
+        label {
+          input[type="radio"] {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .return__form-main {
+    .form {
+      margin: 50px 10px;
+      .form__main {
+        width: 350px;
+        .last_form {
+          .address {
+            width: 350px;
+            margin-right: 0;
+          }
+          .collection-date {
+            width: 350px;
+            margin-right: 0;
+            label {
+              text-wrap: normal;
+            }
+          }
         }
       }
     }

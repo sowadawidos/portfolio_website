@@ -8,17 +8,16 @@
 }
 .simple__steps-return {
   background: rgb(255,255,255);
-  background: linear-gradient(183deg, rgba(255,255,255,1) 0%, rgba(248,247,245,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(253,253,253,1) 100%);
   .container {
     max-width: 1440px;
-    margin: 0;
     height: 100vh;
     display: flex;
     .form__hero {
       background-image: url("Form-Hero-Image.jpg") ;
-      background-position: center;
+      background-position: right;
       background-size: cover;
-      width: 900px;
+      width: 1500px;
       height: 100vh;
     }
     .simple__steps-hero {
@@ -26,6 +25,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      margin-right: 20px;
       .simple__steps-hero-main {
         display: flex;
         flex-direction: column;
@@ -77,4 +77,48 @@
       }
     }
   }
+}
+@media (max-width: 580px) {
+  .return__items {
+    .hero__box {
+      margin: 5px;
+    }
+  }
+  .simple__steps-return {
+    .container {
+      .simple__steps-hero {
+        margin-left: 20px;
+        .simple__steps-hero-main {
+          width: 450px;
+          .simple__steps-text {
+            text-align: center;
+          }
+          .simple__steps-list {
+            flex-wrap: wrap;
+            .simple__steps-list-text {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .simple__steps-return {
+    .container {
+      .simple__steps-hero {
+        margin-left: 20px;
+        .simple__steps-hero-main {
+          width: 350px;
+          .simple__steps-list {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+
 }

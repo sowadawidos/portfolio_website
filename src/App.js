@@ -36,6 +36,29 @@ function App() {
       console.error("brak bazy")
     }
   }
+  const getOrder = order => {
+    if (db) {
+      db.collection("order").add({
+        bags: order.SECOND_FORM.select,
+        type: order.FIRST_FORM.firstCheckbox,
+        localization: order.THIRD_FORM.localization,
+        helpGroups: order.THIRD_FORM.thirdCheckbox,
+        street: order.FOURTH_FORM.street,
+        city: order.FOURTH_FORM.city,
+        date: order.FOURTH_FORM.date,
+        hour: order.FOURTH_FORM.hour,
+        postCode: order.FOURTH_FORM.postCode,
+        phone: order.FOURTH_FORM.telephoneNumber,
+        note: order.FOURTH_FORM.comments
+      })
+          .catch(error => {
+            console.log(error)
+          })
+    }
+      else {
+        console.error("brak bazy")
+      }
+    }
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
@@ -61,7 +84,7 @@ function App() {
             <LoggedOut user={user} logOut={logOut}/>
           </Route>
           <Route path="/oddaj-rzeczy">
-            <ReturnItems user={user} logOut={logOut} sendMessage={sendMessage}/>
+            <ReturnItems user={user} logOut={logOut} sendMessage={sendMessage} getOrder={getOrder}/>
           </Route>
         </Switch>
       </Router>

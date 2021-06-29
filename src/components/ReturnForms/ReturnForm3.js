@@ -2,15 +2,24 @@ import React, {useState, useEffect} from "react";
 import {Field, Form} from "react-final-form";
 
 export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
+    const [error, setError] = useState(false);
+    console.log(error)
+    const handleBack = () => {
+        setCurrentStep(prev => prev - 1);
+    }
     return (
         <>
             <div className="form">
                 <Form onSubmit={(form) => {
-                    setStepsData(prev => ({
-                        ...prev,
-                        THIRD_FORM: form
-                    }))
-                    setCurrentStep(prev => prev + 1)
+                    if (!form.localization || !form.thirdCheckbox) {
+                        setError(true);
+                    } else {
+                        setStepsData(prev => ({
+                            ...prev,
+                            THIRD_FORM: form
+                        }))
+                        setCurrentStep(prev => prev + 1)
+                    }
                 }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
@@ -20,7 +29,7 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                     {({input}) => (
                                         <label>
                                             <select name="localization" {...input}>
-                                                <option selected disabled defaultValue='0'>-- wybierz --</option>
+                                                <option value="" selected disabled>-- wybierz --</option>
                                                 <option value="Poznań">Poznań</option>
                                                 <option value="Warszawa">Warszawa</option>
                                                 <option value="Kraków">Kraków</option>
@@ -36,7 +45,7 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                     Komu chcesz pomóc?
                                 </h1>
                                 <div className="who-helps">
-                                    <Field name="first-checkbox" type="checkbox">
+                                    <Field name="thirdCheckbox" type="radio" value="dzieciom">
                                         {({input}) => (
                                             <label>
                                                 <input type="checkbox" name="first-checkbox" value="dzieciom" {...input}/>
@@ -44,7 +53,7 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="second-checkbox" type="checkbox">
+                                    <Field name="thirdCheckbox" type="radio" value="samotnym matkom">
                                         {({input}) => (
                                             <label>
                                                 <input type="checkbox" name="second-checkbox" value="samotnym matkom" {...input}/>
@@ -52,7 +61,7 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="third-checkbox" type="checkbox">
+                                    <Field name="thirdCheckbox" type="radio" value="bezdomnym">
                                         {({input}) => (
                                             <label>
                                                 <input type="checkbox" name="third-checkbox" {...input} value="bezdomnym"/>
@@ -60,7 +69,7 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="fourth-checkbox" type="checkbox">
+                                    <Field name="thirdCheckbox" type="radio" value="niepełnosprawnym">
                                         {({input}) => (
                                             <label>
                                                 <input type="checkbox" name="fourth-checkbox" value="niepełnosprawnym" {...input}/>
@@ -68,9 +77,9 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="fifth-checkbox" type="checkbox">
+                                    <Field name="thirdCheckbox" type="radio" value="osobom starszym">
                                         {({input}) => (
-                                            <label htmlFor="">
+                                            <label>
                                                 <input type="checkbox" name="fifth-checkbox" value="osobom starszym" {...input}/>
                                                 osobom starszym
                                             </label>
@@ -88,7 +97,13 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData}) => {
                                     )}
                                 </Field>
                             </div>
+                            <div className="error">
+                                <h1>{error && "Wybierz lokalizację oraz komu chcesz pomóc!"}</h1>
+                            </div>
                             <div className="buttons">
+                                <button className="back btn" onClick={handleBack}>
+                                    Wstecz
+                                </button>
                                 <button className="next btn">
                                     Dalej
                                 </button>

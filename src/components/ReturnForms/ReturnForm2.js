@@ -3,15 +3,23 @@ import {Field, Form} from "react-final-form";
 import "./ReturnForm.scss";
 
 export const ReturnForm2 = ({setCurrentStep, setStepsData}) => {
+    const [error, setError] = useState(false);
+    const handleBack = () => {
+        setCurrentStep(prev => prev - 1);
+    }
     return (
         <>
             <div className="form">
                 <Form onSubmit={(form) => {
-                    setStepsData(prev => ({
-                        ...prev,
-                        SECOND_FORM: form
-                    }))
-                    setCurrentStep(prev => prev + 1)
+                    if (!form.select) {
+                        setError(true);
+                    } else {
+                        setStepsData(prev => ({
+                            ...prev,
+                            SECOND_FORM: form
+                        }))
+                        setCurrentStep(prev => prev + 1)
+                    }
                 }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
@@ -24,7 +32,7 @@ export const ReturnForm2 = ({setCurrentStep, setStepsData}) => {
                                         <label>
                                             Liczba 60l worków:
                                             <select name="select" {...input}>
-                                                <option selected disabled defaultValue='0'>-- wybierz --</option>
+                                                <option value="" selected disabled>-- wybierz --</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -35,7 +43,13 @@ export const ReturnForm2 = ({setCurrentStep, setStepsData}) => {
                                     )}
                                 </Field>
                             </div>
+                            <div className="error">
+                                <h1>{error && "Podaj liczbę worków!"}</h1>
+                            </div>
                             <div className="buttons">
+                                <button className="back btn" onClick={handleBack}>
+                                    Wstecz
+                                </button>
                                 <button className="next btn">
                                     Dalej
                                 </button>

@@ -3,23 +3,32 @@ import {Form, Field} from 'react-final-form';
 import "./ReturnForm.scss";
 
 export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
+    const [error, setError] = useState(false);
+    console.log(error)
     return (
         <>
             <div className="form">
-                <Form onSubmit={(form) => {
-                    setStepsData(prev => ({
-                        ...prev,
-                        FIRST_FORM: form
-                    }))
-                    setCurrentStep(prev => prev + 1)
-                }}>
+                <Form
+                    onSubmit={(form) => {
+                        if (!form.firstCheckbox) {
+                            setError(true);
+                        } else {
+                            setStepsData(prev => ({
+                                ...prev,
+                                FIRST_FORM: form
+                            }))
+                            setCurrentStep(prev => prev + 1)
+                        }
+
+                    }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
                             <h1 className="form__main-title">
                                 Zaznacz, co chcesz oddać
                             </h1>
                             <div className="inputs">
-                                <Field name="first-checkbox" type="checkbox">
+                                <Field name="firstCheckbox" type="radio"
+                                       value="ubrania które nadają się do ponownego użycia">
                                     {({input}) => (
                                         <label>
                                             <input type="checkbox" name="first-checkbox" {...input}/>
@@ -27,7 +36,7 @@ export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
                                         </label>
                                     )}
                                 </Field>
-                                <Field name="second-checkbox" type="checkbox">
+                                <Field name="firstCheckbox" type="radio" value="ubrania do wyrzucenia">
                                     {({input}) => (
                                         <label>
                                             <input type="checkbox" name="second-checkbox" {...input}/>
@@ -35,7 +44,7 @@ export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
                                         </label>
                                     )}
                                 </Field>
-                                <Field name="third-checkbox" type="checkbox">
+                                <Field name="firstCheckbox" type="radio" value="zabawki">
                                     {({input}) => (
                                         <label>
                                             <input type="checkbox" name="third-checkbox" {...input}/>
@@ -43,7 +52,7 @@ export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
                                         </label>
                                     )}
                                 </Field>
-                                <Field name="fourth-checkbox" type="checkbox">
+                                <Field name="firstCheckbox" type="radio" value="książki">
                                     {({input}) => (
                                         <label>
                                             <input type="checkbox" name="fourth-checkbox" {...input}/>
@@ -51,16 +60,18 @@ export const ReturnForm1 = ({setCurrentStep, setStepsData}) => {
                                         </label>
                                     )}
                                 </Field>
-                                <Field name="fifth-checkbox" type="checkbox">
+                                <Field name="firstCheckbox" type="radio" value="Inne">
                                     {({input}) => (
-                                        <label htmlFor="">
+                                        <label>
                                             <input type="checkbox" name="fifth-checkbox" {...input}/>
                                             Inne
                                         </label>
                                     )}
                                 </Field>
                             </div>
-
+                            <div className="error">
+                                <h1>{error && "Zaznacz jedną z odpowiedzi!"}</h1>
+                            </div>
                             <div className="buttons">
                                 <button className="next btn">
                                     Dalej

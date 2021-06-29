@@ -5,6 +5,7 @@
   background-image: url("Background-Form.jpg");
   background-size: cover;
   background-position: right;
+  background-repeat: no-repeat;
   .container {
     max-width: 1440px;
     margin: auto;
@@ -15,13 +16,22 @@
     .return__form-main-box {
       display: flex;
       align-items: center;
-      justify-content: space-around;
       flex-direction: column;
-      height: 70%;
+      height: 90%;
       h1 {
         font-size: 24px;
         font-weight: 300;
         color: $color-grey;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .return__form-main {
+    .container {
+      .return__form-main-box {
+        width: 100%;
       }
     }
   }

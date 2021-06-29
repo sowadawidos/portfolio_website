@@ -8,7 +8,7 @@ import {SimpleSteps} from "./SimpleSteps";
 import {Important} from "../Important/Important";
 import {ReturnItemForm} from "../Return_Item-Form/ReturnItemForm";
 
-export const ReturnItems = ({logOut, user, sendMessage}) => {
+export const ReturnItems = ({logOut, user, sendMessage, getOrder}) => {
     const active = true;
     return (
         <>
@@ -19,7 +19,7 @@ export const ReturnItems = ({logOut, user, sendMessage}) => {
                 </div>
                 <SimpleSteps/>
                 <Important/>
-                <ReturnItemForm/>
+                <ReturnItemForm getOrder={getOrder}/>
                 <Contact sendMessage={sendMessage}/>
                 <Footer/>
             </section>

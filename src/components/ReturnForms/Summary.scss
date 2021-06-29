@@ -1,0 +1,81 @@
+@import "src/scss/settings/colors";
+.items {
+  display: flex;
+  align-items: center;
+  .items-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .items-text {
+    font-size: 16px;
+    color: $color-grey;
+    font-weight: 500;
+  }
+}
+.person-summary {
+  display: flex;
+  margin-top: 50px;
+  .address {
+    margin-right: 100px;
+    .address-text {
+      margin-bottom: 20px;
+      .address-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        span {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .collection-date {
+    margin-right: 100px;
+    .collection-text {
+      margin-bottom: 20px;
+      .collection-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin-bottom: 20px;
+      }
+      span {
+        font-size: 22px;
+      }
+      .kurier {
+        color: $color-grey;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+  }
+}
+@media (max-width: 890px) {
+  .person-summary {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 680px) {
+  .person-summary {
+    flex-direction: column;
+    .address {
+      width: 400px;
+      .address-text {
+        .address-title {
+          width: 350px;
+        }
+      }
+    }
+    .collection-date {
+      width: 400px;
+      .collection-text {
+        .collection-title {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
