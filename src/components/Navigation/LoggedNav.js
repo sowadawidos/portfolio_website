@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from "react";
-import "./LoginNav.scss"
+import React from "react";
 import {Link} from "react-router-dom";
+
+import "./LoginNav.scss"
+
 
 export const LoggedNav = ({user, logOut}) => {
     return (

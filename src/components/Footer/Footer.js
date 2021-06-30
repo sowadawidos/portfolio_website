@@ -1,13 +1,17 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
+import "./Footer.scss";
+
 import facebook from "./Facebook.svg";
 import instagram from "./Instagram.svg";
-import "./Footer.scss";
+
 
 export const Footer = () => {
     return (
         <>
             <section className="footer">
                 <div className="container">
+                    <span/>
                     <div className="copyright">
                         Copyright by Coders Lab
                     </div>

@@ -35,6 +35,10 @@
       cursor: pointer;
       font-weight: 300;
       margin-right: 10px;
+      &:hover {
+        border: 2px solid #737373;
+        padding: 9px 29px;
+      }
     }
   }
 }
@@ -46,6 +50,9 @@
         width: 200px;
         font-size: 25px;
         padding: 10px 20px;
+        &:hover {
+          padding: 9px 19px;
+        }
       }
     }
   }

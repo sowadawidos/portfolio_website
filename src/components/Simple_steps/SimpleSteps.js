@@ -1,12 +1,17 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+import {Link} from "react-router-dom";
+
 import "./SimpleSteps.scss";
+
+import {SimpleStepsList} from "./SimpleStepsList";
+
 import decoration from "../../assets/Decoration.svg"
 import image1 from "./Icon-1.svg"
 import image2 from "./Icon-2.svg"
 import image3 from "./Icon-3.svg"
 import image4 from "./Icon-4.svg"
-import {SimpleStepsList} from "./SimpleStepsList";
-import {Link} from "react-router-dom";
+
+
 
 export const SimpleSteps = () => {
     const steps = [{

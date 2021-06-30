@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react"
-import decoration from "../../assets/Decoration.svg"
+import React from "react"
+
 import "./ThankYou.scss";
+
+import decoration from "../../assets/Decoration.svg"
+
 
 export const ThankYou = () => {
     return (

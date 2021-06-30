@@ -2,10 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About_us/AbousUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/AbousUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About_us/AboutUsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_us/AboutUsMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/NavList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/Helps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/Helps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/Helps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/HelpsButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/HelpsButtons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Helps/HelpsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Helps/HelpsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Important/Important.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Important/Important.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOut.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOutMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOutMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/LoggedNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoggedNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/LoginNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoginNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/Summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ThankYou.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ThankYou.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/Background-Form.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnItemForm/Background-Form.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnItemForm/ReturnItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_Item-Form/ReturnItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnItemForm/ReturnItemForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_items/SimpleSteps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/SimpleStep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_items/SimpleStepsReturnList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/SimpleStepsReturnList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Simple_steps/SimpleStepsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleStepsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumnsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three_columns/ThreeColumnsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +94,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -76,7 +121,8 @@
       <workItem from="1624217252474" duration="15306000" />
       <workItem from="1624549043848" duration="21508000" />
       <workItem from="1624910028314" duration="24855000" />
-      <workItem from="1624994418656" duration="284000" />
+      <workItem from="1624994418656" duration="974000" />
+      <workItem from="1625044621290" duration="13206000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
 import {Field, Form} from "react-final-form";
 
 export const ReturnForm4 = ({setCurrentStep, setStepsData, setData}) => {
@@ -101,7 +102,7 @@ export const ReturnForm4 = ({setCurrentStep, setStepsData, setData}) => {
                                     <Field name="comments" type="text" defaultValue="">
                                         {({input}) => (
                                             <label>
-                                                Uwagi dla kuriera
+                                                <p className="comments">Uwagi dla kuriera</p>
                                                 <textarea name="comments" {...input} />
                                             </label>
                                         )}

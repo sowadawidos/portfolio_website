@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
+import "./ReturnItems.scss";
+
 import {LoginNav} from "../Navigation/LoginNav";
 import {Header} from "../Header/Header";
-import "./ReturnItems.scss";
 import {Contact} from "../Contact/Contact";
 import {Footer} from "../Footer/Footer";
-import {SimpleSteps} from "./SimpleSteps";
+import {SimpleStep} from "./SimpleStep";
 import {Important} from "../Important/Important";
-import {ReturnItemForm} from "../Return_Item-Form/ReturnItemForm";
+import {ReturnItemForm} from "../ReturnItemForm/ReturnItemForm";
 
 export const ReturnItems = ({logOut, user, sendMessage, getOrder}) => {
     const active = true;
@@ -17,7 +19,7 @@ export const ReturnItems = ({logOut, user, sendMessage, getOrder}) => {
                     <LoginNav user={user} logOut={logOut}/>
                     <Header active={active}/>
                 </div>
-                <SimpleSteps/>
+                <SimpleStep/>
                 <Important/>
                 <ReturnItemForm getOrder={getOrder}/>
                 <Contact sendMessage={sendMessage}/>

@@ -1,7 +1,10 @@
-import React, {useState, useEffect} from "react";
-import "./Contact.scss";
-import decoration from "../../assets/Decoration.svg"
+import React, {useState} from "react";
 import {Form, Field} from 'react-final-form'
+
+import "./Contact.scss";
+
+import decoration from "../../assets/Decoration.svg"
+
 
 export const Contact = ({sendMessage}) => {
     const [active, setActive] = useState(false);

@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
 import "./Home.scss";
+
 import {Hero} from "../Hero/Hero";
 import {ThreeColumns} from "../Three_columns/ThreeColumns";
 import {SimpleSteps} from "../Simple_steps/SimpleSteps";

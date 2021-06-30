@@ -1,8 +1,11 @@
-import React, {useState, useEffect} from "react";
-import decoration from "../../assets/Decoration.svg"
+import React, {useState} from "react";
+
 import "./Helps.scss";
+
 import {HelpsButtons} from "./HelpsButtons";
 import {HelpsList} from "./HelpsList";
+
+import decoration from "../../assets/Decoration.svg"
 
 export const Helps = () => {
     const [active, setActive] = useState({

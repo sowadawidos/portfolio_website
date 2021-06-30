@@ -3,6 +3,7 @@
 .return__form-main {
   height: 100vh;
   background-image: url("Background-Form.jpg");
+  background-color: #EDEEEC;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -26,7 +27,11 @@
     }
   }
 }
-
+@media (max-width: 1330px) {
+  .return__form-main {
+    background-size: contain;
+  }
+}
 @media (max-width: 880px) {
   .return__form-main {
     .container {
@@ -34,5 +39,11 @@
         width: 100%;
       }
     }
+  }
+}
+@media (max-width: 675px) {
+  .return__form-main {
+    background: rgb(237,238,236);
+    background: linear-gradient(180deg, rgba(237,238,236,1) 0%, rgba(239,237,236,1) 100%);
   }
 }

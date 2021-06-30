@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {Field, Form} from "react-final-form";
+
 import "./ReturnForm.scss";
 
 export const ReturnForm2 = ({setCurrentStep, setData}) => {

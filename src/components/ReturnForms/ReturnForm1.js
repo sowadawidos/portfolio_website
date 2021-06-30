@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {Form, Field} from 'react-final-form';
+
 import "./ReturnForm.scss";
 
 export const ReturnForm1 = ({setCurrentStep, setData}) => {
@@ -15,7 +16,6 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                             setData(form);
                             setCurrentStep(prev => prev + 1);
                         }
-
                     }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
@@ -26,41 +26,46 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                                 <Field name="firstCheckbox" type="radio"
                                        value="ubrania które nadają się do ponownego użycia">
                                     {({input}) => (
-                                        <label>
+                                        <label className="radio-label">
                                             <input type="checkbox" name="first-checkbox" {...input}/>
-                                            ubrania, które nadają się do ponownego użycia
+                                            <span className="checkmark"/>
+                                            <p>ubrania, które nadają się do ponownego użycia</p>
                                         </label>
                                     )}
                                 </Field>
                                 <Field name="firstCheckbox" type="radio" value="ubrania do wyrzucenia">
                                     {({input}) => (
-                                        <label>
+                                        <label className="radio-label">
                                             <input type="checkbox" name="second-checkbox" {...input}/>
-                                            ubrania, do wyrzucenia
+                                            <span className="checkmark"/>
+                                            <p>ubrania, do wyrzucenia</p>
                                         </label>
                                     )}
                                 </Field>
                                 <Field name="firstCheckbox" type="radio" value="zabawki">
                                     {({input}) => (
-                                        <label>
+                                        <label className="radio-label">
                                             <input type="checkbox" name="third-checkbox" {...input}/>
-                                            zabawki
+                                            <span className="checkmark"/>
+                                            <p>zabawki</p>
                                         </label>
                                     )}
                                 </Field>
                                 <Field name="firstCheckbox" type="radio" value="książki">
                                     {({input}) => (
-                                        <label>
+                                        <label className="radio-label">
                                             <input type="checkbox" name="fourth-checkbox" {...input}/>
-                                            książki
+                                            <span className="checkmark"/>
+                                            <p>książki</p>
                                         </label>
                                     )}
                                 </Field>
                                 <Field name="firstCheckbox" type="radio" value="Inne">
                                     {({input}) => (
-                                        <label>
+                                        <label className="radio-label">
                                             <input type="checkbox" name="fifth-checkbox" {...input}/>
-                                            Inne
+                                            <span className="checkmark"/>
+                                            <p>Inne</p>
                                         </label>
                                     )}
                                 </Field>

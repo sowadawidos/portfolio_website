@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
 import {LoginNav} from "../Navigation/LoginNav";
 import {Header} from "../Header/Header";
 import {RegisterMain} from "./RegisterMain";

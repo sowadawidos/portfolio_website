@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react"
-import {Field, Form} from "react-final-form";
+import React from "react"
+import { Form} from "react-final-form";
+
+import "./Summary.scss";
+
 import item from "../Simple_steps/Icon-1.svg";
 import circle from "../Simple_steps/Icon-4.svg";
-import "./Summary.scss";
+
 
 export const Summary = ({setCurrentStep, stepsData, getOrder}) => {
     const handleBack = () => {

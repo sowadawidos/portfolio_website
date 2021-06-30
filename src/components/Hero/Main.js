@@ -1,7 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+
 import "./Main.scss"
-import decoration from "../../assets/Decoration.svg"
+
 import {Link} from "react-router-dom";
+
+import decoration from "../../assets/Decoration.svg"
+
 
 export const Main = ({user}) => {
     return (

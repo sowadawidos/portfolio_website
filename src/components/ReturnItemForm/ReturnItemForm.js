@@ -1,5 +1,7 @@
-import React, {useState, useEffect, useCallback} from "react";
+import React, {useState, useCallback} from "react";
+
 import "./ReturnItemForm.scss";
+
 import {ReturnForm1} from "../ReturnForms/ReturnForm1";
 import {ReturnForm2} from "../ReturnForms/ReturnForm2";
 import {ReturnForm3} from "../ReturnForms/ReturnForm3";
@@ -15,6 +17,7 @@ const STEP_NAMES = {
     fifth: "FIFTH_FORM",
     sixth: "SIXTH_FORM"
 }
+
 const STEP_ORDER = [STEP_NAMES.first, STEP_NAMES.second, STEP_NAMES.third, STEP_NAMES.fourth, STEP_NAMES.fifth, STEP_NAMES.sixth]
 
 export const ReturnItemForm = ({getOrder}) => {

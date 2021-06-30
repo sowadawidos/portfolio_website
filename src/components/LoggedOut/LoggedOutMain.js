@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from "react";
-import decoration from "../../assets/Decoration.svg";
+import React from "react";
 import {Link} from "react-router-dom";
+
+import decoration from "../../assets/Decoration.svg";
+
 
 export const LoggedOutMain = () => {
     return (

@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+
 import {Field, Form} from "react-final-form";
 
 export const ReturnForm3 = ({setCurrentStep, setStepsData, setData}) => {
@@ -43,41 +44,46 @@ export const ReturnForm3 = ({setCurrentStep, setStepsData, setData}) => {
                                 <div className="who-helps">
                                     <Field name="thirdCheckbox" type="radio" value="dzieciom">
                                         {({input}) => (
-                                            <label>
+                                            <label className="radio-label">
                                                 <input type="checkbox" name="first-checkbox" value="dzieciom" {...input}/>
-                                                dzieciom
+                                                <span className="checkmark"/>
+                                                <p>dzieciom</p>
                                             </label>
                                         )}
                                     </Field>
                                     <Field name="thirdCheckbox" type="radio" value="samotnym matkom">
                                         {({input}) => (
-                                            <label>
+                                            <label className="radio-label">
                                                 <input type="checkbox" name="second-checkbox" value="samotnym matkom" {...input}/>
-                                                samotnym matkom
+                                                <span className="checkmark"/>
+                                                <p>samotnym matkom</p>
                                             </label>
                                         )}
                                     </Field>
                                     <Field name="thirdCheckbox" type="radio" value="bezdomnym">
                                         {({input}) => (
-                                            <label>
+                                            <label className="radio-label">
                                                 <input type="checkbox" name="third-checkbox" {...input} value="bezdomnym"/>
-                                                bezdomnym
+                                                <span className="checkmark"/>
+                                                <p>bezdomnym</p>
                                             </label>
                                         )}
                                     </Field>
                                     <Field name="thirdCheckbox" type="radio" value="niepełnosprawnym">
                                         {({input}) => (
-                                            <label>
+                                            <label className="radio-label">
                                                 <input type="checkbox" name="fourth-checkbox" value="niepełnosprawnym" {...input}/>
-                                                niepełnosprawnym
+                                                <span className="checkmark"/>
+                                                <p>niepełnosprawnym</p>
                                             </label>
                                         )}
                                     </Field>
                                     <Field name="thirdCheckbox" type="radio" value="osobom starszym">
                                         {({input}) => (
-                                            <label>
+                                            <label className="radio-label">
                                                 <input type="checkbox" name="fifth-checkbox" value="osobom starszym" {...input}/>
-                                                osobom starszym
+                                                <span className="checkmark"/>
+                                                <p>osobom starszym</p>
                                             </label>
                                         )}
                                     </Field>

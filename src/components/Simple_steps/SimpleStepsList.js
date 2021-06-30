@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 export const SimpleStepsList = ({key, step}) => {
     return (
         <>
-            <li className="simple__steps-list-text">
+            <li key={key} className="simple__steps-list-text">
                 <img src={step.image} alt=""/>
                 <h2>{step.task}</h2>
                 <span/>

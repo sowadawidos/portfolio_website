@@ -70,7 +70,10 @@
     color: #737373;
     cursor: pointer;
     font-weight: 300;
-
+    &:hover {
+      border: 2px solid #737373;
+      padding: 9px 29px;
+    }
   }
 }
 

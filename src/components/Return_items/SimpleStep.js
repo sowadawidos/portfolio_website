@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from "react";
-import form_hero from "./Form-Hero-Image.jpg"
+import React from "react";
+
 import "./ReturnItems.scss";
-import decoration from "../../assets/Decoration.svg";
+
 import {SimpleStepsReturnList} from "./SimpleStepsReturnList";
 
-export const SimpleSteps = () => {
+import decoration from "../../assets/Decoration.svg";
+
+
+export const SimpleStep = () => {
     const SimpleStepsItem = ["Wybierz rzeczy", "Spakuj je w worki", "Wybierz fundacje", "Zamów kuriera"];
 
     return (

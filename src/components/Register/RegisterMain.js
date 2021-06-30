@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from "react";
-import decoration from "../../assets/Decoration.svg";
+import React from "react";
 import {Link} from "react-router-dom";
 import {Form, Field} from 'react-final-form'
+
+import decoration from "../../assets/Decoration.svg";
 
 export const RegisterMain = ({signUp, user}) => {
     return (
@@ -97,7 +98,6 @@ export const RegisterMain = ({signUp, user}) => {
                         </Form>
                     </div>
             }
-
         </>
     )
 }
