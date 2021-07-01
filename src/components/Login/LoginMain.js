@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {Form, Field} from 'react-final-form'
 
@@ -8,8 +8,13 @@ import decoration from "../../assets/Decoration.svg";
 import {LoginError} from "../LoginError/LoginError";
 
 
-export const LoginMain = ({signIn, user}) => {
+export const LoginMain = ({signIn, user, blurFunction}) => {
     const [loginError, setLoginError] = useState();
+
+
+    useEffect(() => {
+        blurFunction(loginError);
+    }, [loginError])
 
     return (
         <>

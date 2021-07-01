@@ -13,7 +13,7 @@ import image4 from "./Icon-4.svg"
 
 
 
-export const SimpleSteps = () => {
+export const SimpleSteps = ({user}) => {
     const steps = [{
         image: image1,
         task: "Wybierz rzeczy",
@@ -47,9 +47,17 @@ export const SimpleSteps = () => {
                         }
                     </ul>
                 </div>
-                <Link to="/logowanie">
-                    <button>oddaj rzeczy</button>
-                </Link>
+                {
+                    user ?
+                        <Link to="/oddaj-rzeczy">
+                            <button>oddaj rzeczy</button>
+                        </Link>
+                        :
+                        <Link to="/logowanie">
+                            <button>oddaj rzeczy</button>
+                        </Link>
+                }
+
             </section>
         </>
     )

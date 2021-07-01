@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOutMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedOut/LoggedOutMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/LoginMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/LoginNav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/LoginNav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Return_items/SimpleStep.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/SimpleStep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +77,7 @@
       <workItem from="1624549043848" duration="21508000" />
       <workItem from="1624910028314" duration="24855000" />
       <workItem from="1624994418656" duration="974000" />
-      <workItem from="1625044621290" duration="23631000" />
+      <workItem from="1625044621290" duration="25714000" />
     </task>
     <servers />
   </component>
