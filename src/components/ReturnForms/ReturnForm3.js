@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm3 = ({setCurrentStep, setStepsData, setData}) => {
+export const ReturnForm3 = ({setCurrentStep, setData}) => {
     const [error, setError] = useState(false);
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);

@@ -2,8 +2,6 @@ import React from "react";
 
 import "./ReturnItems.scss";
 
-import {LoginNav} from "../Navigation/LoginNav";
-import {Header} from "../Header/Header";
 import {Contact} from "../Contact/Contact";
 import {Footer} from "../Footer/Footer";
 import {SimpleStep} from "./SimpleStep";
@@ -15,11 +13,7 @@ export const ReturnItems = ({logOut, user, sendMessage, getOrder}) => {
     return (
         <>
             <section className="return__items">
-                <div className="hero__box">
-                    <LoginNav user={user} logOut={logOut}/>
-                    <Header active={active}/>
-                </div>
-                <SimpleStep/>
+                <SimpleStep user={user} active={active} logOut={logOut}/>
                 <Important/>
                 <ReturnItemForm getOrder={getOrder}/>
                 <Contact sendMessage={sendMessage}/>

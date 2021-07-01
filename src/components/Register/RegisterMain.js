@@ -1,23 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {Form, Field} from 'react-final-form'
 
+import {MessageToUser} from "../MessageToUser/MessageToUser";
+
 import decoration from "../../assets/Decoration.svg";
+import {LoginError} from "../LoginError/LoginError";
 
 export const RegisterMain = ({signUp, user}) => {
+    const [loginError, setLoginError] = useState();
     return (
         <>
             {
                 user ?
-                    <div className="login__main">
-                        <h1 className="login__title">Zarejestrowano i zalogowano pomyślnie</h1>
-                        <img src={decoration} alt="decoration" className="login__image"/>
-                        <Link to="/">
-                            <button className="back__to-home">
-                                Strona główna
-                            </button>
-                        </Link>
-                    </div>
+                    <MessageToUser message={"Zarejestrowano i zalogowano pomyślnie"}/>
                     :
                     <div className="login__main">
                         <h1 className="login__title">Załóż konto</h1>
@@ -25,6 +21,9 @@ export const RegisterMain = ({signUp, user}) => {
                         <Form
                             onSubmit={(user) => {
                                 signUp(user.email, user.password)
+                                    .catch(error => {
+                                        setLoginError(error.code)
+                                })
                             }}
                             validate={values => {
                                 const errors = {}
@@ -43,6 +42,9 @@ export const RegisterMain = ({signUp, user}) => {
                             }}>
                             {({handleSubmit}) => (
                                 <form className="register__form" onSubmit={handleSubmit}>
+                                    {
+                                        loginError && <LoginError code={loginError} setLoginError={setLoginError}/>
+                                    }
                                     <div className="inputs">
                                         <Field name="email">
                                             {({input, meta}) => (

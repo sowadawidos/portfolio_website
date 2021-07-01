@@ -2,10 +2,11 @@ import React from "react";
 
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm4 = ({setCurrentStep, setStepsData, setData}) => {
+export const ReturnForm4 = ({setCurrentStep, setData}) => {
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
+
     return (
         <>
             <div className="form">

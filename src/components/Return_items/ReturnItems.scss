@@ -1,9 +1,6 @@
 .return__items {
   .hero__box {
     margin: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 .simple__steps-return {
@@ -23,13 +20,14 @@
     .simple__steps-hero {
       height: 100vh;
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
       align-items: center;
-      margin-right: 40px;
       .simple__steps-hero-main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 20px;
+        margin-top: 150px;
         .simple__steps-title {
           font-size: 38px;
           font-weight: 500;
@@ -74,6 +72,27 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .return__items {
+    .hero__box {
+      width: 100%;
+      margin: 20px 5px;
+    }
+  }
+  .simple__steps-return {
+    display: flex;
+    justify-content: center;
+    .container {
+      max-width: 450px;
+      .simple__steps-hero {
+        width: 450px;
+      }
+      .form__hero {
+        display: none;
       }
     }
   }

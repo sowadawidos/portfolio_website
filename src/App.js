@@ -16,9 +16,9 @@ import {ReturnItems} from "./components/Return_items/ReturnItems";
 function App() {
   const [user, setUser] = useState();
 
-  const signUp = (email, password) => auth.createUserWithEmailAndPassword(email, password);
+  const signUp = async (email, password) => auth.createUserWithEmailAndPassword(email, password);
 
-  const signIn = (email, password) => auth.signInWithEmailAndPassword(email, password);
+  const signIn = async (email, password) => auth.signInWithEmailAndPassword(email, password);
 
   const logOut = () => auth.signOut();
 
