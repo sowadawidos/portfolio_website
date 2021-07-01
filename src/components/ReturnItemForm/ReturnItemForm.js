@@ -22,9 +22,7 @@ const STEP_ORDER = [STEP_NAMES.first, STEP_NAMES.second, STEP_NAMES.third, STEP_
 
 export const ReturnItemForm = ({getOrder}) => {
     const [currentStep, setCurrentStep] = useState(0);
-    const [stepsData, setStepsData] = useState({
-
-    });
+    const [stepsData, setStepsData] = useState({});
     const currentStepName = STEP_ORDER[currentStep];
 
     const setData = useCallback((stepName, stepData) => {
@@ -32,7 +30,7 @@ export const ReturnItemForm = ({getOrder}) => {
             ... prev,
             [stepName]: stepData
         }))
-    });
+    }, [setStepsData]);
 
     let currentStepComponent;
     switch (currentStepName) {
