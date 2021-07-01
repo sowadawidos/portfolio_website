@@ -11,7 +11,6 @@ import {LoginError} from "../LoginError/LoginError";
 export const LoginMain = ({signIn, user, blurFunction}) => {
     const [loginError, setLoginError] = useState();
 
-
     useEffect(() => {
         blurFunction(loginError);
     }, [loginError])

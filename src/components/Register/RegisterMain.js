@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Form, Field} from 'react-final-form'
 
@@ -7,8 +7,13 @@ import {MessageToUser} from "../MessageToUser/MessageToUser";
 import decoration from "../../assets/Decoration.svg";
 import {LoginError} from "../LoginError/LoginError";
 
-export const RegisterMain = ({signUp, user}) => {
+export const RegisterMain = ({signUp, user, blurFunction}) => {
     const [loginError, setLoginError] = useState();
+
+    useEffect(() => {
+        blurFunction(loginError);
+    }, [loginError])
+
     if (user) {
         return <MessageToUser message={"Zarejestrowano i zalogowano pomyślnie"}/>;
     }

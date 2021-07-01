@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import ReactDom from "react-dom";
+
 import "./LoginError.scss";
 
 export const LoginError = ({code, setLoginError}) => {
@@ -19,7 +21,7 @@ export const LoginError = ({code, setLoginError}) => {
         }
     }, [code])
 
-    return (
+    return ReactDom.createPortal(
         <>
             <section className="login__error">
                 <div className="container">
@@ -27,6 +29,7 @@ export const LoginError = ({code, setLoginError}) => {
                     <button onClick={() => setLoginError("")}>Cofnij</button>
                 </div>
             </section>
-        </>
+        </>,
+        document.getElementById("portal")
     )
 }

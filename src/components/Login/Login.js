@@ -16,7 +16,7 @@ export const Login = ({signIn, user, logOut}) => {
 
     return (
         <>
-            <section className="login">
+            <section className="login" style={blur ? {filter: "blur(4px)"} : {}}>
                 <div className="container">
                     <LoginNav user={user} logOut={logOut}/>
                     <Header active={active}/>
