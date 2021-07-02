@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm3 = ({setCurrentStep, setData}) => {
+export const ReturnForm3 = ({setCurrentStep, setData, data}) => {
     const [error, setError] = useState(false);
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
@@ -10,14 +10,18 @@ export const ReturnForm3 = ({setCurrentStep, setData}) => {
     return (
         <>
             <div className="form">
-                <Form onSubmit={(form) => {
+                <Form
+                    onSubmit={(form) => {
                     if (!form.localization || !form.thirdCheckbox) {
                         setError(true);
                     } else {
                         setData(form);
                         setCurrentStep(prev => prev + 1);
                     }
-                }}>
+                    }}
+                    initialValues={{
+                        ...data
+                    }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
                             <h1 className="form__main-title">

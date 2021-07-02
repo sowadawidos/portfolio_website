@@ -1,22 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Form, Field} from 'react-final-form';
 
 import "./ReturnForm.scss";
 
-export const ReturnForm1 = ({setCurrentStep, setData}) => {
+export const ReturnForm1 = ({setCurrentStep, setData, data}) => {
     const [error, setError] = useState(false);
+
     return (
         <>
             <div className="form">
                 <Form
                     onSubmit={(form) => {
+                        console.log(form)
                         if (!form.firstCheckbox) {
                             setError(true);
                         } else {
                             setData(form);
                             setCurrentStep(prev => prev + 1);
                         }
-                    }}>
+                    }}
+                initialValues={{
+                    ...data
+                }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
                             <h1 className="form__main-title">
@@ -27,7 +32,8 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                                        value="ubrania które nadają się do ponownego użycia">
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <input type="checkbox" name="first-checkbox" {...input}/>
+                                            <h1>{input.checked}</h1>
+                                            <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>ubrania, które nadają się do ponownego użycia</p>
                                         </label>
@@ -36,16 +42,16 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                                 <Field name="firstCheckbox" type="radio" value="ubrania do wyrzucenia">
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <input type="checkbox" name="second-checkbox" {...input}/>
+                                            <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>ubrania, do wyrzucenia</p>
                                         </label>
                                     )}
                                 </Field>
-                                <Field name="firstCheckbox" type="radio" value="zabawki">
+                                <Field name="firstCheckbox" type="radio" value="zabawki" >
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <input type="checkbox" name="third-checkbox" {...input}/>
+                                            <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>zabawki</p>
                                         </label>
@@ -54,7 +60,7 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                                 <Field name="firstCheckbox" type="radio" value="książki">
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <input type="checkbox" name="fourth-checkbox" {...input}/>
+                                            <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>książki</p>
                                         </label>
@@ -63,7 +69,7 @@ export const ReturnForm1 = ({setCurrentStep, setData}) => {
                                 <Field name="firstCheckbox" type="radio" value="Inne">
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <input type="checkbox" name="fifth-checkbox" {...input}/>
+                                            <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>Inne</p>
                                         </label>

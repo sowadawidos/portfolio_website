@@ -3,22 +3,27 @@ import {Field, Form} from "react-final-form";
 
 import "./ReturnForm.scss";
 
-export const ReturnForm2 = ({setCurrentStep, setData}) => {
+export const ReturnForm2 = ({setCurrentStep, setData, data}) => {
     const [error, setError] = useState(false);
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
+    console.log(data);
     return (
         <>
             <div className="form">
-                <Form onSubmit={(form) => {
+                <Form
+                    onSubmit={(form) => {
                     if (!form.select) {
                         setError(true);
                     } else {
                         setData(form);
                         setCurrentStep(prev => prev + 1);
                     }
-                }}>
+                    }}
+                    initialValues={{
+                        ...data
+                    }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
                             <h1 className="form__main-title">

@@ -1,11 +1,13 @@
 import React from "react";
-
+import Inputmask from "inputmask/lib/inputmask";
 import {Field, Form} from "react-final-form";
 
-export const ReturnForm4 = ({setCurrentStep, setData}) => {
+export const ReturnForm4 = ({setCurrentStep, setData, data}) => {
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
+
+    Inputmask().mask(document.querySelectorAll("input"));
 
     return (
         <>
@@ -23,7 +25,7 @@ export const ReturnForm4 = ({setCurrentStep, setData}) => {
                         if (!values.city || values.city.length < 2) {
                             errors.city = true
                         }
-                        if (!values.postCode || values.postCode.length < 5) {
+                        if (!values.postCode || values.postCode.length < 6) {
                             errors.postCode = true
                         }
                         if (!values.telephoneNumber || values.telephoneNumber.length < 9) {
@@ -36,6 +38,9 @@ export const ReturnForm4 = ({setCurrentStep, setData}) => {
                             errors.hour = true
                         }
                         return errors;
+                    }}
+                    initialValues={{
+                        ...data
                     }}>
                     {({handleSubmit}) => (
                         <form className="form__main" onSubmit={handleSubmit}>
@@ -63,11 +68,11 @@ export const ReturnForm4 = ({setCurrentStep, setData}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="postCode" type="number">
+                                    <Field name="postCode" type="text" >
                                         {({input, meta}) => (
                                             <label>
                                                 Kod pocztowy
-                                                <input type="number" name="post-code" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
+                                                <input data-inputmask="'mask': '99-999'" maxLength="6" type="number" name="post-code" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
@@ -75,7 +80,7 @@ export const ReturnForm4 = ({setCurrentStep, setData}) => {
                                         {({input, meta}) => (
                                             <label>
                                                 Numer telefonu
-                                                <input name="telephone-number" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
+                                                <input maxLength={9} name="telephone-number" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
