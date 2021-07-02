@@ -1,13 +1,10 @@
 import React from "react";
-import Inputmask from "inputmask/lib/inputmask";
 import {Field, Form} from "react-final-form";
 
 export const ReturnForm4 = ({setCurrentStep, setData, data}) => {
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
-
-    Inputmask().mask(document.querySelectorAll("input"));
 
     return (
         <>
@@ -25,7 +22,7 @@ export const ReturnForm4 = ({setCurrentStep, setData, data}) => {
                         if (!values.city || values.city.length < 2) {
                             errors.city = true
                         }
-                        if (!values.postCode || values.postCode.length < 6) {
+                        if (!values.postCode || values.postCode.length !== 5) {
                             errors.postCode = true
                         }
                         if (!values.telephoneNumber || values.telephoneNumber.length < 9) {
@@ -68,19 +65,19 @@ export const ReturnForm4 = ({setCurrentStep, setData, data}) => {
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="postCode" type="text" >
+                                    <Field name="postCode" type="number" >
                                         {({input, meta}) => (
                                             <label>
                                                 Kod pocztowy
-                                                <input data-inputmask="'mask': '99-999'" maxLength="6" type="number" name="post-code" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
+                                                <input maxLength="5" type="number" name="post-code" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
-                                    <Field name="telephoneNumber" type="number">
+                                    <Field name="telephoneNumber" type="tel">
                                         {({input, meta}) => (
                                             <label>
                                                 Numer telefonu
-                                                <input maxLength={9} name="telephone-number" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
+                                                <input maxLength="9" name="telephone-number" {...input} style={(meta.touched && meta.error) ? {border: "1px solid red"} : {}}/>
                                             </label>
                                         )}
                                     </Field>
