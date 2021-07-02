@@ -8,7 +8,6 @@ export const ReturnForm2 = ({setCurrentStep, setData, data}) => {
     const handleBack = () => {
         setCurrentStep(prev => prev - 1);
     }
-    console.log(data);
     return (
         <>
             <div className="form">
