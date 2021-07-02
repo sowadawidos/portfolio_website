@@ -80,7 +80,7 @@
               font-weight: 300;
               transform: rotate(-45deg);
               padding-top: 8px;
-              padding-left: 18px;
+              padding-left: 24px;
             }
           }
         }
@@ -180,6 +180,11 @@
   .simple__steps-return {
     .container {
       max-width: 350px;
+      .simple__steps-hero {
+        .simple__steps-hero-main {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

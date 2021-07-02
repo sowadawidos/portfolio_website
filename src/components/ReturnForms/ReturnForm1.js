@@ -32,7 +32,6 @@ export const ReturnForm1 = ({setCurrentStep, setData, data}) => {
                                        value="ubrania które nadają się do ponownego użycia">
                                     {({input}) => (
                                         <label className="radio-label">
-                                            <h1>{input.checked}</h1>
                                             <input {...input} checked={input.checked} onChange={input.onChange}/>
                                             <span className="checkmark"/>
                                             <p>ubrania, które nadają się do ponownego użycia</p>

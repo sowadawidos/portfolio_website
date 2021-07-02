@@ -23,3 +23,17 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .important {
+    .container {
+      .important__box {
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

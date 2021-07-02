@@ -337,6 +337,16 @@
 
       .form__main {
         width: 350px;
+        .form__main-title {
+          font-size: 26px;
+        }
+        .inputs {
+          .radio-label {
+            p {
+              width: 250px;
+            }
+          }
+        }
         .buttons {
           margin-top: 20px;
         }
@@ -352,6 +362,9 @@
 
             label {
               text-wrap: normal;
+              textarea {
+                height: 80px;
+              }
             }
           }
         }

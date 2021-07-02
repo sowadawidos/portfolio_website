@@ -33,3 +33,11 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .login__error {
+    .container {
+      width: 300px;
+    }
+  ;
+  }
+}

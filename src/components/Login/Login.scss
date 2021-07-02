@@ -143,6 +143,10 @@
 @media (max-width: 530px) {
   .login {
     .login__main {
+      width: 350px;
+      .login__form {
+        width: 350px;
+      }
       .buttons {
         width: 350px;
       }
