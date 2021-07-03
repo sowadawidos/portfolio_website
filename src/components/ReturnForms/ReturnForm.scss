@@ -332,6 +332,11 @@
 
 @media (max-width: 550px) {
   .return__form-main {
+    .buttons {
+      .btn {
+        height: 60px;
+      }
+    }
     .form {
       margin: 20px 10px;
 

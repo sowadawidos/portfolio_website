@@ -162,6 +162,12 @@
         .simple__steps-hero-main {
           width: 350px;
           margin-top: 50px;
+          .simple__steps-title {
+            font-size: 30px;
+          }
+          .simple__steps-title2 {
+            margin: 10px 0;
+          }
           .simple__steps-list {
             flex-wrap: wrap;
           }
