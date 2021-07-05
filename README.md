@@ -25,3 +25,5 @@ You will also see any lint errors in the console.
 ## DEMO
 
 Here is a demo of the website: [DEMO](https://portfolio-lab-coderslab.web.app/)
+![Zrzut ekranu 2021-07-3 o 11 24 56](https://user-images.githubusercontent.com/79333135/124349792-54b9dc00-dbf1-11eb-97e6-e60015d5e515.png)
+
