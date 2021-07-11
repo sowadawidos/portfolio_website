@@ -282,6 +282,7 @@
 @media (max-width: 880px) {
   .return__form-main {
     .form {
+      margin: 20px 50px;
       .form__main {
         .form__main-title.smaller {
           margin: 5px 0;
@@ -318,6 +319,9 @@
 
       .form__main {
         width: 450px;
+        .buttons {
+          margin-top: 20px;
+        }
 
         label {
           input[type="radio"] {

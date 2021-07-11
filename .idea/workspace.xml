@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e724f41-d03c-4d9c-a2ef-ed222d976eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/ReturnForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReturnForms/Summary.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReturnForms/Summary.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return_items/ReturnItems.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Simple_steps/SimpleSteps.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
